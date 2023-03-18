@@ -4,7 +4,24 @@ import "./Reviewcards.css";
 import img from "../../../src/assets/png/guide.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { baseUrl } from "../../utils/urls";
+import { useState,useEffect } from "react";
 function Reviewcards() {
+    const [reviews,setReviews]=useState([])
+    useEffect(()=>{
+        async function fetchdata(){
+            const response=  await axios.get(`${baseUrl}/reviews/`)
+            console.log(response.data)
+                 setReviews(response.data);
+                 
+              
+     
+     
+        } fetchdata();
+       
+    },[])
+
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
