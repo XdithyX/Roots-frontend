@@ -33,4 +33,4 @@ const Places = () => {
   )
 }
 
-export default Places  navigator
+export default Places  
