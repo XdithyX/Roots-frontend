@@ -18,6 +18,7 @@ import Loader from "./components/Loader/Loader";
 import { Toaster } from "react-hot-toast";
 import axiosInstance from "./auth/authHandler";
 import { baseUrl } from "./utils/urls";
+import Place from "./pages/Place/Place";
 function App() {
   useEffect(() => {
     if (window.localStorage.getItem("access_token")) {
@@ -57,6 +58,7 @@ function App() {
             <Route path="/items" element={<Items />} />
             <Route path="/profile" element={<ProfilePg />} />
             <Route path="/guide-reg" element={<BecomGuidePg />} />
+            <Route path="/place" element={<Place />} />
           </Routes>
         </BrowserRouter>
       </Suspense>
