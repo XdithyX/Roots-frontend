@@ -39,10 +39,11 @@
 .home__button {
     width: 10rem;
     border: none;
-    background: #006dd1;
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
     cursor: pointer;
     border-radius: 1rem;
-    color: #bcd3e2;
+    color: black;
+    font-weight: bold;
     padding: 0.95rem;
     font-display: center;
     font-size: 1.2rem;
