@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import "./Homepage.css";
 import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -10,6 +10,13 @@ import PhotoGallery from "../../components/PhotoGallery/PhotoGallery";
 import CustomTitle from "../../utils/CustomTitle";
 import Teams from '../../components/Teams/Teams'
 const Homepage = () => {
+  const [open, setOpen] = useState(false)
+  const handleOpen=()=>{
+    setOpen(true)
+  }
+  const handleClose=()=>{
+    setOpen(false)
+  }
   useEffect(()=>{
     Aos.init({duration:700})
   },[])
