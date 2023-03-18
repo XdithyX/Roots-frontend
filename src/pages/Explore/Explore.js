@@ -20,7 +20,7 @@ function Explore() {
         <div className='ethinc__subcont1'>
            <div className='ethnic__subsubcont1'>
              <div className='divn1'>hello</div>
-             <div className='divn2'></div>
+             <div className='divn2'>hello</div>
            </div>
            <div className='ethnic__subsubcont2'>hello</div>
 
