@@ -12,7 +12,8 @@ import {
   ProfilePg,
   BecomGuidePg,
   Review,
-  Explore
+  Explore,
+  Place
 } from "./pages/index";
 import Navbar from "./components/Navbar/Navbar";
 import ScrollToTop from "./utils/ScrollToTop";
