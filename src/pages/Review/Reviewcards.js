@@ -1,6 +1,6 @@
 import React from 'react'
 import MainLayout from '../../components/MainLayout/MainLayout'
-import './Reviewcards.css'
+import './Reviewcards.scss'
 function Reviewcards() {
   return (
    <MainLayout>
