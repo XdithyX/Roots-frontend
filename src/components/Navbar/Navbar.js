@@ -75,7 +75,7 @@ function Navbar() {
               LOGOUT
             </PageLink>
           ) : (
-            <PageLink to="/login" className="nav__link">
+            <PageLink to="/login" className="nav__link nav__login">
               LOGIN
             </PageLink>
           )}
