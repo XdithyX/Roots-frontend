@@ -29,6 +29,10 @@ function Explore() {
        </div>
      
      </div>  
+
+     <div className='cultural__sec'>
+       <div className='explore__subheading'>Cultural Events</div>
+     </div>
        
     </div>
     </MainLayout>
