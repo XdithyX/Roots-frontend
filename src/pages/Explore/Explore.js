@@ -1,7 +1,24 @@
 import React from 'react'
 import MainLayout from '../../components/MainLayout/MainLayout'
 import './Explore.css'
+import { useEffect,useState } from 'react'
+import axios from 'axios'
+import { baseUrl } from '../../utils/urls'
 function Explore() {
+  const [cuisines,setCuisines]=useState([])
+   useEffect(()=>{
+    
+    async function fetchdata(){
+       const response=  await axios.get(`${baseUrl}/cuisine/`)
+       console.log(response.data)
+            setCuisines(response.data);
+            
+         
+
+
+   } fetchdata();
+  },[])
+    
   return (
     <MainLayout>
     <div className='explore__pg'>
@@ -19,13 +36,31 @@ function Explore() {
        <div className='ethnic__cont'>
         <div className='ethinc__subcont1'>
            <div className='ethnic__subsubcont1'>
-             <div className='divn1'>hello</div>
-             <div className='divn2'>hello</div>
+             <div className='divn1'>
+             <img className='ethnic__img' src={cuisines[0]?.food_image}/>
+             <div className='exp__contentdiv'>
+             <h4>{cuisines[0]?.food_name}</h4>
+             <p className='ethnic__place'>Nigeria</p>
+             </div>
+             </div>
+             <div className='divn2'><img className='ethnic__img' src={cuisines[0]?.food_image}/>
+             <div className='exp__contentdiv'>
+             <h4>{cuisines[0]?.food_name}</h4>
+             <p className='ethnic__place'>Nigeria</p>
+             </div></div>
            </div>
-           <div className='ethnic__subsubcont2'>hello</div>
+           <div className='ethnic__subsubcont2'><img className='ethnic__img' src={cuisines[0]?.food_image}/>
+           <div className='exp__contentdiv'>
+           <h4>{cuisines[0]?.food_name}</h4>
+           <p className='ethnic__place'>Nigeria</p>
+           </div></div>
 
         </div>
-        <div className='ethnic__subcont2'></div>
+        <div className='ethnic__subcont2'><img className='ethnic__img' src={cuisines[0]?.food_image}/>
+        <div className='exp__contentdiv'>
+        <h4>{cuisines[0]?.food_name}</h4>
+        <p className='ethnic__place'>Nigeria</p>
+        </div></div>
        </div>
      
      </div>  
