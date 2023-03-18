@@ -20,6 +20,7 @@
     "react-icons": "^4.7.1",
     "react-loader-spinner": "^5.3.4",
     "react-lottie": "^1.2.3",
+    "react-multi-carousel": "^2.8.2",
     "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^6.4.3",
     "react-router-hash-link": "^2.4.3",
@@ -49,5 +50,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "sass-loader": "^13.2.0"
   }
 }

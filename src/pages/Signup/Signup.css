@@ -1,16 +1,18 @@
-.su__main{
+.su__main {
     width: 100vw;
     min-height: 90vh;
     display: flex;
     flex-direction: row;
     font-family: Poppins;
 }
-.su__blank_space{
+
+.su__blank_space {
     width: 50vw;
     height: 90vh;
     background: #3B5B6F;
 }
-.su__form_container{
+
+.su__form_container {
     width: 50vw;
     min-height: 90vh;
     display: flex;
@@ -18,35 +20,46 @@
     align-items: center;
     background-color: #1C3747;
 }
-.su__and_continue{
-    color:  #006360;
+
+.su__and_continue {
+    color: #FFB932;
     font-size: 1.5rem;
 }
-.su__welcome_text{
+
+.su__welcome_text {
     color: #ffff;
     font-size: 2.5rem;
-
 }
-.su__main_form{
+
+.su__main_form {
     display: flex;
     flex-direction: column;
     gap: .75rem;
 }
-.su__input_taker{
+
+.su__input_taker {
     height: 3rem;
-    width:15rem;
+    width: 15rem;
     border: none;
     border-radius: 10px;
+    outline: linen;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
-.su__submit_button{
+
+.su__submit_button {
     width: 15rem;
     height: 3rem;
-    background:  #006360;
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
     box-shadow: 4px 4px 12px #000000, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
     border-radius: 20px;
-    color: aliceblue;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
-.su__form_container{
+
+.su__form_container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -54,53 +67,33 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 1300px) {}
 
-@media only screen and (max-width: 1300px) {
+@media (min-device-width: 20px) and (max-device-width: 500px) {}
 
-}
-@media (min-device-width: 20px) and (max-device-width: 500px){
-   
-}
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {}
 
-}
+@media only screen and (max-width: 1100px) {}
 
-@media only screen and (max-width: 1100px) {
+@media screen and (max-width: 992px) {}
 
-}
-
-@media screen and (max-width: 992px) {
-
-}
-
-@media screen and (max-width: 800px) {
-
-}
+@media screen and (max-width: 800px) {}
 
 @media screen and (max-width: 600px) {
-    .su__form_container{
+    .su__form_container {
         width: 100vw;
     }
-    .su__blank_space{
+    .su__blank_space {
         visibility: hidden;
     }
-    .su__main{
+    .su__main {
         flex-direction: column-reverse;
         height: 90vh;
     }
-
 }
 
-@media screen and (max-width: 400px) {
-    
-}
-  
-@media only screen and (min-device-width: 320px) and (max-device-width: 
-  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+@media screen and (max-width: 400px) {}
 
-}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {}
 
-
-@media only screen and (device-width: 768px) {
-
-}
+@media only screen and (device-width: 768px) {}

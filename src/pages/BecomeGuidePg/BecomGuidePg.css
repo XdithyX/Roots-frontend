@@ -66,13 +66,14 @@
 }
 
 .g_button {
-    background-color: #006360;
-    color: #ffff;
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
+    color: black;
     border-radius: 20px;
     justify-content: center !important;
     border: none;
     width: 15rem;
     height: 3rem;
+    font-size: 1.3rem;
     box-shadow: 4px 4px 12px #05182D, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
 }
 

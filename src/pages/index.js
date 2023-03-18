@@ -9,3 +9,4 @@ export const Items = lazy(() => import("./Items/Items"));
 export const PlaceDetailPg=lazy(() =>import("./PlaceDetailPg/PlaceDetailPg"))
 export const ProfilePg =lazy(()=>import('./ProfilePg/ProfilePg'))
 export const BecomGuidePg =lazy(()=>import('./BecomeGuidePg/BecomGuidePg'))
+export const Review = lazy(()=>import('./Review/Reviewcards'))

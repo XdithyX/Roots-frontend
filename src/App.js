@@ -11,6 +11,7 @@ import {
   PlaceDetailPg,
   ProfilePg,
   BecomGuidePg,
+  Review
 } from "./pages/index";
 import Navbar from "./components/Navbar/Navbar";
 import ScrollToTop from "./utils/ScrollToTop";
@@ -18,7 +19,7 @@ import Loader from "./components/Loader/Loader";
 import { Toaster } from "react-hot-toast";
 import axiosInstance from "./auth/authHandler";
 import { baseUrl } from "./utils/urls";
-import Place from "./pages/Place/Place";
+
 function App() {
   useEffect(() => {
     if (window.localStorage.getItem("access_token")) {
@@ -59,6 +60,7 @@ function App() {
             <Route path="/profile" element={<ProfilePg />} />
             <Route path="/guide-reg" element={<BecomGuidePg />} />
             <Route path="/place" element={<Place />} />
+            <Route path="/reviews" element={<Review/>}  />
           </Routes>
         </BrowserRouter>
       </Suspense>
