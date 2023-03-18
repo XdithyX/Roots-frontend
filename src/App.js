@@ -11,7 +11,8 @@ import {
   PlaceDetailPg,
   ProfilePg,
   BecomGuidePg,
-  Review
+  Review,
+  Explore
 } from "./pages/index";
 import Navbar from "./components/Navbar/Navbar";
 import ScrollToTop from "./utils/ScrollToTop";
@@ -61,6 +62,7 @@ function App() {
             <Route path="/guide-reg" element={<BecomGuidePg />} />
             <Route path="/place" element={<Place />} />
             <Route path="/reviews" element={<Review/>}  />
+            <Route path="/explore" element={<Explore/>} />
           </Routes>
         </BrowserRouter>
       </Suspense>
