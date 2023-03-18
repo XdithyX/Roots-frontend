@@ -60,6 +60,7 @@ function App() {
             <Route path="/items" element={<Items />} />
             <Route path="/profile" element={<ProfilePg />} />
             <Route path="/guide-reg" element={<BecomGuidePg />} />
+            <Route path="/place" element={<Place />} />
             <Route path="/reviews" element={<Review/>}  />
             <Route path="/explore" element={<Explore/>} />
           </Routes>
