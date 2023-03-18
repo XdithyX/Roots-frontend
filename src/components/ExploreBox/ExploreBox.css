@@ -1,0 +1,7 @@
+.ExpBox{
+    background: rgba(254, 245, 245, 0.09);
+backdrop-filter: blur(39px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 10px;
+}
