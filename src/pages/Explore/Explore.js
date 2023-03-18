@@ -16,6 +16,17 @@ function Explore() {
      <div className='ethnic__sec'>
        <div className='explore__subheading'>
        Ethnic Cuisines</div>
+       <div className='ethnic__cont'>
+        <div className='ethinc__subcont1'>
+           <div className='ethnic__subsubcont1'>
+             <div className='divn1'>hello</div>
+             <div className='divn2'></div>
+           </div>
+           <div className='ethnic__subsubcont2'>hello</div>
+
+        </div>
+        <div className='ethnic__subcont2'></div>
+       </div>
      
      </div>  
        
