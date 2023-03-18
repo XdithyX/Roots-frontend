@@ -25,9 +25,9 @@ function Navbar() {
   const notHome = location.pathname.length > 1 ? true : false;
 
   const navStyleHome = {
-    background: scrollPosition > 300 ? "#111111" : "rgba(17, 17, 17, 0.1)",
+    background: scrollPosition > 300 ? "#111111" : "black",
     boxShadow:
-      scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
+      scrollPosition > 200 ? "black" : "none",
     backdropFilter: "blur(10px)",
   };
   const navStyle = {
