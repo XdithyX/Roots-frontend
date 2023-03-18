@@ -73,6 +73,7 @@
     border: none;
     width: 15rem;
     height: 3rem;
+    font-size: 1.3rem;
     box-shadow: 4px 4px 12px #05182D, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
 }
 
