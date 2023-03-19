@@ -13,7 +13,7 @@
 
 .place_container {
     background-color: black;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .places_heading {
@@ -21,8 +21,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
-.places_heading-title {}
 
 .places_heading_text {
     font-family: 'Poppins';
@@ -43,7 +41,39 @@
     justify-content: center;
 }
 
-.places_recommented {}
+.place__img {
+    height: 15rem;
+    width: 100%;
+}
+
+.places_recommented_cards {
+    color: white;
+    width: 90%;
+    margin: auto;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.places__top__left {
+    width: 90%;
+    display: flex;
+}
+
+.places__top__left__right {
+    margin-left: 1rem;
+    width: 45%;
+}
+
+.place__top__left__left {
+    width: 65%;
+}
+
+.place__left__details {
+    width: 100%;
+}
 
 .places_recommented_heading {
     display: flex;
@@ -62,6 +92,16 @@
     background-clip: text;
 }
 
+.place__details__para {
+    color: white;
+}
+
+.places__details__p {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
 .places_recommented_heading2 {
     font-family: 'Poppins';
     font-style: normal;
@@ -70,10 +110,6 @@
     color: #FFFFFF;
     margin-left: 1.2rem;
 }
-
-.places_recommented_cards {}
-
-.places_recommented_card {}
 
 .places_searchbar {
     width: 19rem;
@@ -85,4 +121,8 @@
     border: none;
     outline: none;
     padding-left: 1rem;
+}
+
+.places__div__bottom {
+    width: 90%;
 }
