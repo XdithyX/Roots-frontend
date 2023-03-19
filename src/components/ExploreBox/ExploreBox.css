@@ -21,7 +21,11 @@
 }
 
 .exp__content {
+    display: flex;
+    flex-direction: column;
     margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .exp__img {
@@ -43,4 +47,12 @@
     font-size: 1.2rem;
     margin-top: 1.2rem;
     font-weight: bold;
+}
+
+.cul__eventname{
+    color: #ED9E17;
+}
+
+.cul__loc{
+    display: flex;
 }
