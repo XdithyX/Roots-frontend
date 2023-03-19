@@ -1,0 +1,52 @@
+.purchaise__details {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);
+    border: solid 2px transparent;
+    margin: auto;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.purchaise__div {
+    padding-top: 2rem;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__img {
+    border-radius: 1rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+.prd__details {
+    color: white;
+}
+
+.purcahise__btn__div {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.purschaise__btn {
+    background-color: #006360;
+    border: none;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
+    box-shadow: 4px 4px 12px #000000, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+}

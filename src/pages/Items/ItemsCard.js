@@ -18,19 +18,7 @@ const ItemsCard = ({itemName,itemImage,itemDesc,itemId,userId}) => {
  const navigate=useNavigate();
   let date=new Date();
   const isoDateString = date.toISOString().substring(0, 10);
-  const purchaseItem=(e)=>{
-      axiosInstance.post(`${baseUrl}/purchases/`,{
-        date_of_purchase: isoDateString,
-        item_foreign_key: itemId,
-        user_foreign: userId
-    }).then((response)=>{
-      // console.log("purchase: ",response)
-      if(response.status===201){
-        toast.success("Succesfully placed the order!!");
-      }
-    })
-    
-  }
+ 
   return (
     <div className='item__card__body' data-aos="zoom-in">
       <ItemsDetDialog open={open} handleClose={handleClose} pName={pName} itemDesc={itemDesc}/>

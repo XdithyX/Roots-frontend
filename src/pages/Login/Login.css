@@ -25,9 +25,14 @@
 }
 
 .su__and_continue {
-    color: #006360;
-    font-size: 1.5rem;
-    /* font-weight: bold; */
+    gap: 2.5rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    align-items: center;
+    color: #cf7632;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 400;
 }
 
 .su__welcome_text {
@@ -45,17 +50,18 @@
     height: 3rem;
     width: 15rem;
     border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
 }
 
 .su__submit_button {
     width: 15rem;
-    height: 3rem;
-    background: #006360;
-    box-shadow: 4px 4px 12px #000000, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
+    height: 2.25rem;
+    border: #FFFFFF;
+    cursor: pointer;
     border-radius: 20px;
-    color: aliceblue;
-    border: none;
-    box-shadow: 4px 4px 12px #05182D, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
 }
 
 .su__submit_button:hover {
