@@ -15,7 +15,7 @@ Our website is a platform dedicated to promoting rural tourism and cultural exch
 2. In the landing page it contains a Home option to go to the home page, About option that specifies the details of the website and Contact option providing the contact details.
 3. We have another page where we would be able to explore various ethnic cuisines and also book tickets for cultural events and workshops of various products.
 4. We also have pages that features the various places and the activities & attractions that are present there and guide details will be provided for each activity and attractions.
-5.There is another page where you could buy antiques and handicrafts from the native people who make these products
+5.There is another page where you could buy antiques and handicrafts from the native people who make these products.
 
 ## Technologies used
 #### Django, ReactJS, Railway, Vercel, Supabase
