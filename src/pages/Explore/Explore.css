@@ -80,7 +80,7 @@ top: 273px; */
     display: flex;
     flex-direction: row;
     margin: 3rem;
-    height: 20rem;
+    height: 25rem;
     gap: 1rem;
 }
 

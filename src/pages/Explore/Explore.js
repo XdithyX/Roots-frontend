@@ -7,14 +7,16 @@ import axios from 'axios'
 import { baseUrl } from '../../utils/urls'
 function Explore() {
   const [cuisines,setCuisines]=useState([])
+  const [cultural,setCultural]=useState([])
    useEffect(()=>{
     
     async function fetchdata(){
        const response=  await axios.get(`${baseUrl}/cuisine/`)
        console.log(response.data)
             setCuisines(response.data);
-            
-         
+        const response2=await axios.get(`${baseUrl}/cultural-event/`)    
+        setCultural(response2.data)
+        
 
 
    } fetchdata();
@@ -68,11 +70,13 @@ function Explore() {
        <div className='explore__subheading'>Cultural Events</div>
        <div className='cultural__subheading'>Book to stand a chance to win our free offers to one of these tourist centers. </div>
        <div className="explore__container">
-            <ExploreBox />
-            <ExploreBox />
-            <ExploreBox />
-            <ExploreBox />
-            <ExploreBox />
+          { cultural.map((item)=>{
+            return(
+              <ExploreBox key={item.id} eventimg={item.event_image} eventname={item.event_name} eventdesc={item.event_desc} eventloc={item.location} />
+
+            )
+          }) }
+            
           </div>
      </div>
      <div className='Workshop__sec'>
