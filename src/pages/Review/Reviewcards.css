@@ -10,7 +10,8 @@
     justify-content: center;
     align-items: center;
     -webkit-text-fill-color: transparent;
-    /*  */background: linear-gradient(180deg,#fff,#40edf7);
+    /*  */
+    background: linear-gradient(180deg, #fff, #40edf7);
     background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
     -webkit-background-clip: text;
 }
@@ -29,7 +30,6 @@
     background: rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: blur(2rem);
     backdrop-filter: blur(2rem);
-    border: 2-x solid transparent;
     border: solid 2px transparent;
     color: white;
     font-size: 1.5rem;
@@ -46,7 +46,7 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 1rem;
-  
+    margin-top: 15rem;
 }
 
 .rev__details {
@@ -55,12 +55,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.rev__content{
-    margin: 0.5rem;
-}
-
-.rev__place{
-    color:gold;
 }

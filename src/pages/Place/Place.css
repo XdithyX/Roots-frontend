@@ -126,3 +126,29 @@
 .places__div__bottom {
     width: 90%;
 }
+
+.place__div {
+    border-radius: 1rem;
+    display: flex;
+    /* // margin-bottom: 20px; */
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);
+    border: solid 2px transparent;
+    color: white;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.place__user__img {
+    border-radius: 1rem 0rem 0rem 1rem;
+    height: 20rem;
+}
+
+.plcae__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
