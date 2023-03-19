@@ -4,6 +4,7 @@ import { baseUrl } from '../../utils/urls';
 import axiosInstance from '../../auth/authHandler';
 import { toast } from 'react-hot-toast';
 import Aos from 'aos';
+import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 const ItemsCard = ({itemName,itemImage,itemDesc,itemId,userId}) => {
   useEffect(()=>{
@@ -14,7 +15,7 @@ const ItemsCard = ({itemName,itemImage,itemDesc,itemId,userId}) => {
   const handleClose=()=>{
     setOpen(false);
   }
- 
+ const navigate=useNavigate();
   let date=new Date();
   const isoDateString = date.toISOString().substring(0, 10);
   const purchaseItem=(e)=>{
@@ -37,7 +38,8 @@ const ItemsCard = ({itemName,itemImage,itemDesc,itemId,userId}) => {
       <p className='item__name'>{itemName}</p>
       <div className="item__btns">
         <button className="item__purchase_btn" onClick={()=>{
-          purchaseItem();
+          // purchaseItem();
+          navigate(`/product/${itemId}`)
         }}>Purchase</button>
         <button className="item__view_btn" onClick={()=>{
           setOpen(true);

@@ -13,7 +13,8 @@ import {
   BecomGuidePg,
   Review,
   Explore,
-  Place
+  Place,
+  PurchaiseDetails
 } from "./pages/index";
 import Navbar from "./components/Navbar/Navbar";
 import ScrollToTop from "./utils/ScrollToTop";
@@ -64,6 +65,7 @@ function App() {
             <Route path="/place" element={<Place />} />
             <Route path="/reviews" element={<Review/>}  />
             <Route path="/explore" element={<Explore/>} />
+            <Route path="/product/:item_id" element={<PurchaiseDetails/>}/>
           </Routes>
         </BrowserRouter>
       </Suspense>
