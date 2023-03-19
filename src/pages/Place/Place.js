@@ -10,10 +10,14 @@ import { baseUrl } from "../../utils/urls";
 
 function Place() {
    const[place,setPlace]=useState([])
+   const[carplace,setCarplace]=useState([])
   useEffect(()=>{
         async function fetchdata(){
           const response=await axios.get(`${baseUrl}/trendings/`)
           setPlace(response.data)
+          const response2=await axios.get(`${baseUrl}/places/`)
+          setCarplace(response2.data)
+          
         } fetchdata()
   },[])
   const responsive = {
@@ -122,11 +126,11 @@ function Place() {
               </div>
               <div className="places__top__left__right">
                 <div className="place__left__details">
-                  <img src={img} alt="" className="place__img" />
+                  <img src={place[4]?.place_image} alt="" className="place__img" />
                   <div className="places__details__p">
                     <div className="place__details__para">
-                      <p>place_name</p>
-                      <p>place__location</p>
+                      <p>{place[4]?.trending_item}</p>
+                      <p>{place[4]?.place_location}</p>
                     </div>
                     <div className="place__left__like">
                       <p>place__like</p>
@@ -138,36 +142,24 @@ function Place() {
           </div>
         </div>
         <Carousel responsive={responsive}>
-          <div class="place__div" >
+ 
+        { carplace.map((item)=>{
+
+          return(
+            <div class="place__div" >
             <div className="place__user__img">
-              <img src={img} className="place__user__img" alt="" />
+              <img src={item.place_image} className="place__user__img" alt="" />
             </div>
             <div className="plcae__details">
               <p>Sanosh Jacob</p>
-              <p className="place__place">dem</p>
-              <p className="place__content">demo</p>
+              <p className="place__place">{item.place_name}</p>
+              <p className="place__content">{item.place_description}</p>
             </div>
           </div>
-          <div class="place__div" >
-            <div className="place__user__img">
-              <img src={img} className="place__user__img" alt="" />
-            </div>
-            <div className="plcae__details">
-              <p>Sanosh Jacob</p>
-              <p className="place__place">dem</p>
-              <p className="place__content">demo</p>
-            </div>
-          </div>
-          <div class="place__div" >
-            <div className="place__user__img">
-              <img src={img} className="place__user__img" alt="" />
-            </div>
-            <div className="plcae__details">
-              <p>Sanosh Jacob</p>
-              <p className="place__place">dem</p>
-              <p className="place__content">demo</p>
-            </div>
-          </div>
+          )
+        }) }
+
+          
 
         </Carousel>
         ;
