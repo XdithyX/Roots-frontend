@@ -9,9 +9,9 @@
     font-weight: 500;
     margin-top: auto;
     padding: 0.55rem 1.5rem;
-  }
+}
 
-  .items__card_container{
+.items__card_container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -19,12 +19,13 @@
     justify-content: center;
     align-items: center;
     padding: 4rem;
-  }
-  .item__card_img:hover {
+    background: black;
+}
+
+.item__card_img:hover {
     transform: scale(1.2, 1.2);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      10px 10px 30px 15px rgba(0,0,0,0.22);
-  }
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), 10px 10px 30px 15px rgba(0, 0, 0, 0.22);
+}
 
 .item__card_img:hover {
     transform: scale(1.2, 1.2);
@@ -69,10 +70,15 @@
     gap: 1rem;
     color: aliceblue;
     box-shadow: 5px 5px 30px 7px rgb(0 0 0 / 25%), -5px -5px 30px 7px rgb(0 0 0 / 22%);
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);
+    border: solid 2px transparent;
 }
 
 .item__card_img {
-    width: 10rem;
+    width: 80%;
+    border-radius: 1rem;
     height: 10rem;
     cursor: pointer;
     transition: 0.4s;
@@ -91,14 +97,27 @@
     background-color: #006360;
     border: none;
     color: white;
-    padding: 6px;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
+    box-shadow: 4px 4px 12px #000000, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+}
+
+.item__name {
+    font-family: 'Poppins';
+    font-style: normal;
 }
 
 .item__purchase_btn {
     background-color: #006360;
     border: none;
     color: white;
-    padding: 6px;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
+    box-shadow: 4px 4px 12px #000000, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
 }
 
 @media (min-width: 1600px) {

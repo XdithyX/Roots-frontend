@@ -34,7 +34,7 @@ const ItemsCard = ({itemName,itemImage,itemDesc,itemId,userId}) => {
     <div className='item__card__body' data-aos="zoom-in">
       <ItemsDetDialog open={open} handleClose={handleClose} pName={pName} itemDesc={itemDesc}/>
       <img className='item__card_img' src={itemImage} alt="item__image" />
-      <p>{itemName}</p>
+      <p className='item__name'>{itemName}</p>
       <div className="item__btns">
         <button className="item__purchase_btn" onClick={()=>{
           purchaseItem();
