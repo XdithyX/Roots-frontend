@@ -1,5 +1,6 @@
 .explore__pg {
     display: flex;
+    background: black;
     flex-direction: column;
 }
 
@@ -115,7 +116,6 @@ top: 273px; */
     background: rgba(254, 245, 245, 0.09);
     backdrop-filter: blur(39px);
     border-radius: 10px;
-   
     height: 50%;
     width: 50%;
 }

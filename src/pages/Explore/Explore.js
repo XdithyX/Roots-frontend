@@ -83,7 +83,7 @@ function Explore() {
           </div>
      </div>
      <div className='Workshop__sec'>
-     <div className='explore__subheading'>Cultural Events</div>
+     <div className='explore__subheading'>Cultural workshop</div>
      <div className='cultural__subheading'>Book to stand a chance to win our free offers to one of these tourist centers. </div>
            <div className='explore__container'>
            { workshop.map((item)=>{
