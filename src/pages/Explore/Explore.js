@@ -24,10 +24,8 @@ function Explore() {
     <div className='explore__pg'>
        <div className='top__sec'>
          <div className='explore__heading'>ROOT The World </div>
-         <div className='top__seccont'>
-          Aliquet sem suspendisse tristique habitant consectetur cursus at. Leo in eget convallis nunc rhoncus nulla m
-       </div>
-       <input className='searchbar'  ></input>
+         
+       <input className='searchbar'  placeholder='Search for tourist centres,locations'></input>
        </div>
 
      <div className='ethnic__sec'>
@@ -40,14 +38,14 @@ function Explore() {
              <img className='ethnic__img' src={cuisines[0]?.food_image}/>
              <div className='exp__contentdiv'>
              <h4>{cuisines[0]?.food_name}</h4>
-             <p className='ethnic__place'>Nigeria</p>
+             <p className='ethnic__place'>Trivandrum</p>
              </div>
              </div>
              <div className='divn2'><img className='ethnic__img' src={cuisines[1]?.food_image}/>
              <div className='exp__contentdiv'>
              <h4>{cuisines[1]?.food_name}</h4>
-             <p className='ethnic__place'>Trivandrum</p>
-             </div></div>
+            
+              </div></div>
            </div>
            <div className='ethnic__subsubcont2'><img className='ethnic__img' src={cuisines[2]?.food_image}/>
            <div className='exp__contentdiv'>
@@ -59,7 +57,7 @@ function Explore() {
         <div className='ethnic__subcont2'><img className='ethnic__img' src={cuisines[3]?.food_image}/>
         <div className='exp__contentdiv'>
         <h4>{cuisines[3]?.food_name}</h4>
-        <p className='ethnic__place'>Nigeria</p>
+        <p className='ethnic__place'>Kumbalangi</p>
         </div></div>
        </div>
      
