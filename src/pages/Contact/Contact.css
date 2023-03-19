@@ -43,7 +43,8 @@
     font-size: 4rem;
     font-weight: 600;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(180deg,#fff,#40edf7);
+    /*  */background: linear-gradient(180deg,#fff,#40edf7);
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
     -webkit-background-clip: text;
 }
 
