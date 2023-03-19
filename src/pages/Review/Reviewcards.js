@@ -62,9 +62,9 @@ function Reviewcards() {
             <img src={img} className="rev__user__img" alt="" />
           </div>
           <div className="rev__details">
-            <p>user__name</p>
-            <p>place</p>
-            <p>{item.content}</p>
+            <p>Sanosh Jacob</p>
+            <p className="rev__place">{item.place_foreign}</p>
+            <p className="rev__content">{item.content}</p>
             <div className="user__rev__star">
               {[...Array(item.rating)].map((_, index) => (
                 <AiFillStar key={index}/>   

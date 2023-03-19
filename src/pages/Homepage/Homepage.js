@@ -36,7 +36,7 @@ const Homepage = () => {
             Discover the Hidden Gems of Tradition and Culture with Locals 
             </div>
             <Button className="home__button" onClick={()=>{
-              navigate('/places')
+              navigate('/explore')
             }}>
               EXPLORE
               <i className="arrow_icon">
