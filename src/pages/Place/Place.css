@@ -1,51 +1,57 @@
-.places_heading-title{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 3rem;
-        line-height: 6rem;
-        text-align: center;
-        background: linear-gradient(70deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        
+.places_heading-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 6rem;
+    text-align: center;
+    background: linear-gradient(70deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.place_container{
-background-color: black;
+.place_container {
+    background-color: black;
+    height: 100vh;
 }
-.places_heading{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-.places_heading-title{
 
+.places_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.places_heading-title {}
+
 .places_heading_text {
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: .85rem;
-
-
-text-align: center;
-color: #FFFFFF;
-padding-inline: 20rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .85rem;
+    text-align: center;
+    color: #FFFFFF;
+    /* padding-inline: 20rem; */
+    width: 80%;
+    margin: auto;
 }
-.places_heading_search{
 
+.places_heading_search {
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
 }
-.places_recommented{
 
+.places_recommented {}
+
+.places_recommented_heading {
+    display: flex;
+    padding-top: 2rem;
+    padding-left: 2rem;
 }
-.places_recommented_heading{
-display: flex;
-padding-top: 2rem;
-padding-left: 2rem;
-}
-.places_recommented_heading1{
+
+.places_recommented_heading1 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -55,16 +61,28 @@ padding-left: 2rem;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.places_recommented_heading2{
+
+.places_recommented_heading2 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 2.5rem;
     color: #FFFFFF;
+    margin-left: 1.2rem;
 }
-.places_recommented_cards{
 
-}
-.places_recommented_card{
+.places_recommented_cards {}
 
+.places_recommented_card {}
+
+.places_searchbar {
+    width: 19rem;
+    height: 2rem;
+    border-color: #E7A900;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
 }

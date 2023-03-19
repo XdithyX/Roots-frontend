@@ -50,6 +50,9 @@ top: 273px; */
     background-color: #fff;
     border-radius: 1rem;
     margin-top: 1rem;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
 }
 
 .explore__container {
@@ -131,26 +134,25 @@ top: 273px; */
 
 .cultural__subheading {
     font-family: 'Poppins';
-
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     color: #ffffff;
     margin-left: 3rem;
-
 }
 
-.exp__contentdiv{
+.exp__contentdiv {
     margin-left: 0.8rem;
     color: #fff;
     font-family: 'poppins';
 }
-.ethnic__img{
+
+.ethnic__img {
     width: 100%;
     height: 70%;
     border-radius: 0.7rem;
 }
 
-.ethnic__place{
+.ethnic__place {
     font-size: 0.8rem;
 }

@@ -13,7 +13,8 @@ function Place() {
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet sem suspendisse tristique habitant consectetur cursus at. Leo in eget convallis nunc rhoncus nulla m</p>
             </div>
             <div className="places_heading_search">
-                {/* searchbar */}
+            <input className="places_searchbar"  placeholder='Search for tourist centres,locations'></input>
+
             </div>
         </div>
         <div className="places_recommented">
@@ -21,9 +22,7 @@ function Place() {
                 <div className='places_recommented_heading1'>Most</div> <div className='places_recommented_heading2'>Recommented</div>
             </div>
             <div className="places_recommented_cards">
-                <div className="places_recommented_card">
-
-                </div>
+                
             </div>
         </div>
 
