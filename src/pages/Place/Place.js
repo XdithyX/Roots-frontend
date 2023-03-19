@@ -1,5 +1,7 @@
 import React from "react";
 import "./Place.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import img from "../../../src/assets/png/guide.png";
 import MainLayout from "../../components/MainLayout/MainLayout";
 import axios from 'axios'
@@ -14,6 +16,25 @@ function Place() {
           setPlace(response.data)
         } fetchdata()
   },[])
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   return (
     <MainLayout>
@@ -69,7 +90,6 @@ function Place() {
                   </div>
                 </div>
               </div>
-              
             </div>
             <div className="places__div__bottom">
               <div className="place__left__details__div">
@@ -114,12 +134,43 @@ function Place() {
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
-          
         </div>
-       
+        <Carousel responsive={responsive}>
+          <div class="place__div" >
+            <div className="place__user__img">
+              <img src={img} className="place__user__img" alt="" />
+            </div>
+            <div className="plcae__details">
+              <p>Sanosh Jacob</p>
+              <p className="place__place">dem</p>
+              <p className="place__content">demo</p>
+            </div>
+          </div>
+          <div class="place__div" >
+            <div className="place__user__img">
+              <img src={img} className="place__user__img" alt="" />
+            </div>
+            <div className="plcae__details">
+              <p>Sanosh Jacob</p>
+              <p className="place__place">dem</p>
+              <p className="place__content">demo</p>
+            </div>
+          </div>
+          <div class="place__div" >
+            <div className="place__user__img">
+              <img src={img} className="place__user__img" alt="" />
+            </div>
+            <div className="plcae__details">
+              <p>Sanosh Jacob</p>
+              <p className="place__place">dem</p>
+              <p className="place__content">demo</p>
+            </div>
+          </div>
+
+        </Carousel>
+        ;
       </div>
     </MainLayout>
   );
