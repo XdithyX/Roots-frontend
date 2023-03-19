@@ -35,6 +35,7 @@ const Homepage = () => {
             <div className="home__intro" data-aos="zoom-in">
             Discover the Hidden Gems of Tradition and Culture with Locals 
             </div>
+            <div className="home__btns">
             <Button className="home__button" onClick={()=>{
               navigate('/explore')
             }}>
@@ -44,12 +45,22 @@ const Homepage = () => {
                 <FaArrowRight />
               </i>
             </Button>
+            <Button className="place__button" onClick={()=>{
+              navigate('/place')
+            }}>
+              TRENDING
+              <i className="arrow_icon">
+                &nbsp; &nbsp;
+                <FaArrowRight />
+              </i>
+            </Button>
+            </div>
           </div>
         </div>
        
       </div>
       <PhotoGallery/>
-      <Teams/>
+      {/*<Teams/>*/}
       </Stars>
     </MainLayout>
   );

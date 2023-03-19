@@ -108,13 +108,16 @@ top: 273px; */
     background: rgba(254, 245, 245, 0.09);
     backdrop-filter: blur(39px);
     border-radius: 10px;
+    height: 72%;
 }
 
 .ethnic__subsubcont2 {
     background: rgba(254, 245, 245, 0.09);
     backdrop-filter: blur(39px);
     border-radius: 10px;
+   
     height: 50%;
+    width: 50%;
 }
 
 .divn1 {

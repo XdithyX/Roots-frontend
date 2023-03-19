@@ -7,6 +7,8 @@ import MainLayout from "../../components/MainLayout/MainLayout";
 import axios from 'axios'
 import { useState,useEffect } from 'react'
 import { baseUrl } from "../../utils/urls";
+import {AiFillStar} from 'react-icons/ai'
+
 
 function Place() {
    const[place,setPlace]=useState([])
@@ -76,7 +78,7 @@ function Place() {
                       <p>{place[0]?.place_location}</p>
                     </div>
                     <div className="place__left__like">
-                      <p>place__like</p>
+                      <p>{<div><AiFillStar/> <AiFillStar/> <AiFillStar/>  <AiFillStar/></div>}</p>
                     </div>
                   </div>
                 </div>
@@ -90,7 +92,7 @@ function Place() {
                       <p>{place[1]?.place_location}</p>
                     </div>
                     <div className="place__left__like">
-                      <p>place__like</p>
+                      <p>{<div><AiFillStar/>  <AiFillStar/>  <AiFillStar/></div>}</p>
                     </div>
                   </div>
                 </div>
@@ -105,7 +107,7 @@ function Place() {
                     <p>{place[2]?.place_location}</p>
                   </div>
                   <div className="place__left__like">
-                    <p>place__like</p>
+                    <p>{<div><AiFillStar/> <AiFillStar/> <AiFillStar/>  <AiFillStar/> <AiFillStar/></div>}</p>
                   </div>
                 </div>
               </div>
@@ -120,7 +122,7 @@ function Place() {
                       <p>{place[3]?.place_location}</p>
                     </div>
                     <div className="place__left__like">
-                      <p>place__like</p>
+                      <p>{<div><AiFillStar/> <AiFillStar/> <AiFillStar/>  <AiFillStar/></div>}</p>
                     </div>
                   </div>
                 </div>
@@ -134,7 +136,7 @@ function Place() {
                       <p>{place[4]?.place_location}</p>
                     </div>
                     <div className="place__left__like">
-                      <p>place__like</p>
+                      <p>{<div><AiFillStar/> <AiFillStar/></div>}</p>
                     </div>
                   </div>
                 </div>

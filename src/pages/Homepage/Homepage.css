@@ -50,12 +50,32 @@
     box-shadow: 4px 4px 12px #05182D, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
 }
 
+.place__button {
+    width: 11rem;
+    border: none;
+    background: linear-gradient(93.33deg, #E7A900 -3.81%, #FC823D 52.17%, #C33028 115.97%);
+
+
+    cursor: pointer;
+    border-radius: 1rem;
+    color: black;
+    font-weight: bold;
+    padding: 0.95rem;
+    font-display: center;
+    font-size: 1.2rem;
+    box-shadow: 4px 4px 12px #05182D, inset 4px 4px 14px rgba(255, 255, 255, 0.25);
+}
+
 .home__button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .Font {
     font-family: "Rock Salt", cursive;
+}
+.home__btns{
+    display: flex;
+    gap: 1rem;
 }
 
 @media(min-device-width: 200px) and (max-device-width: 800px) {
