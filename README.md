@@ -47,5 +47,5 @@ npm start
 
 
 ## Other Links
-[Figma design](https://www.figma.com/file/My52R6toL9NMzKP62U3r99/Untitled?node-id=0%3A1&t=BS1juPQUWFGm2F8N-1)
+[Figma design](https://www.figma.com/file/WXblyBSXq6PkczPBMgMgZs/Untitled?node-id=4-698&t=QMb9vEoHWQQhtgCb-0)
 
