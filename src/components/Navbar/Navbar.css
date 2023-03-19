@@ -54,7 +54,7 @@
 
 .nav__link {
     gap: 2.5rem;
-    font-family: var(--primary-font);
+    font-family: 'Poppins';
     font-style: normal;
     align-items: center;
     color: #ffffff;
