@@ -62,7 +62,8 @@ function Place() {
         <div className="places_recommented">
           <div className="places_recommented_heading">
             <div className="places_recommented_heading1">Most</div>{" "}
-            <div className="places_recommented_heading2">Recommented</div>
+            <div className="places_recommented_heading2">Recommended
+            </div>
           </div>
           <div className="places_recommented_cards">
             <div className="places__top__left">

@@ -46,7 +46,6 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 1rem;
-    margin-top: 15rem;
 }
 
 .rev__details {
@@ -55,4 +54,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.rev__content{
+    width:33rem;
 }
