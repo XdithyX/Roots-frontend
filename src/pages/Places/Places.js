@@ -20,6 +20,19 @@ const Places = () => {
       <CustomTitle title="Explore"/>
       <div className="places__main_container">
         <h1 className="place__pg_header">Places</h1>
+        <div className="places_heading_text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet
+              sem suspendisse tristique habitant consectetur cursus at. Leo in
+              eget convallis nunc rhoncus nulla m
+            </p>
+          </div>
+          <div className="places_heading_search">
+            <input
+              className="places_searchbar"
+              placeholder="Search for tourist centres,locations"
+            ></input>
+          </div>
         <div className="places__cards_container">
           {places.map((place,index)=>{
             return(
