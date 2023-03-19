@@ -5,7 +5,9 @@ import img from "../../../src/assets/png/guide.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { baseUrl } from "../../utils/urls";
+import axios from 'axios'
 import { useState,useEffect } from "react";
+import {AiFillStar} from 'react-icons/ai'
 function Reviewcards() {
     const [reviews,setReviews]=useState([])
     useEffect(()=>{
@@ -53,58 +55,26 @@ function Reviewcards() {
      
       </div>
       <Carousel responsive={responsive}>
-      <div class="review__div">
+        {reviews.map((item)=>{
+            return(
+            <div class="review__div" key={item.id}>
           <div className="rev__user__img">
             <img src={img} className="rev__user__img" alt="" />
           </div>
           <div className="rev__details">
             <p>user__name</p>
             <p>place</p>
-            <p>user revies goes here</p>
+            <p>{item.content}</p>
             <div className="user__rev__star">
-              <p>stars goes here</p>
+              {[...Array(item.rating)].map((_, index) => (
+                <AiFillStar key={index}/>   
+              ))} 
             </div>
           </div>
         </div>
-        <div class="review__div">
-          <div className="rev__user__img">
-            <img src={img} className="rev__user__img" alt="" />
-          </div>
-          <div className="rev__details">
-            <p>user__name</p>
-            <p>place</p>
-            <p>user revies goes here</p>
-            <div className="user__rev__star">
-              <p>stars goes here</p>
-            </div>
-          </div>
-        </div>
-        <div class="review__div">
-          <div className="rev__user__img">
-            <img src={img} className="rev__user__img" alt="" />
-          </div>
-          <div className="rev__details">
-            <p>user__name</p>
-            <p>place</p>
-            <p>user revies goes here</p>
-            <div className="user__rev__star">
-              <p>stars goes here</p>
-            </div>
-          </div>
-        </div>
-        <div class="review__div">
-          <div className="rev__user__img">
-            <img src={img} className="rev__user__img" alt="" />
-          </div>
-          <div className="rev__details">
-            <p>user__name</p>
-            <p>place</p>
-            <p>user revies goes here</p>
-            <div className="user__rev__star">
-              <p>stars goes here</p>
-            </div>
-          </div>
-        </div>
+            )
+        })}
+
         </Carousel>
         ;
     </MainLayout>

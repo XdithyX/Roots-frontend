@@ -43,22 +43,22 @@ function Explore() {
              <p className='ethnic__place'>Nigeria</p>
              </div>
              </div>
-             <div className='divn2'><img className='ethnic__img' src={cuisines[0]?.food_image}/>
+             <div className='divn2'><img className='ethnic__img' src={cuisines[1]?.food_image}/>
              <div className='exp__contentdiv'>
-             <h4>{cuisines[0]?.food_name}</h4>
-             <p className='ethnic__place'>Nigeria</p>
+             <h4>{cuisines[1]?.food_name}</h4>
+             <p className='ethnic__place'>Trivandrum</p>
              </div></div>
            </div>
-           <div className='ethnic__subsubcont2'><img className='ethnic__img' src={cuisines[0]?.food_image}/>
+           <div className='ethnic__subsubcont2'><img className='ethnic__img' src={cuisines[2]?.food_image}/>
            <div className='exp__contentdiv'>
-           <h4>{cuisines[0]?.food_name}</h4>
-           <p className='ethnic__place'>Nigeria</p>
+           <h4>{cuisines[2]?.food_name}</h4>
+           <p className='ethnic__place'>Kollam</p>
            </div></div>
 
         </div>
-        <div className='ethnic__subcont2'><img className='ethnic__img' src={cuisines[0]?.food_image}/>
+        <div className='ethnic__subcont2'><img className='ethnic__img' src={cuisines[3]?.food_image}/>
         <div className='exp__contentdiv'>
-        <h4>{cuisines[0]?.food_name}</h4>
+        <h4>{cuisines[3]?.food_name}</h4>
         <p className='ethnic__place'>Nigeria</p>
         </div></div>
        </div>
