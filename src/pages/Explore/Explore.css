@@ -1,77 +1,82 @@
-.explore__pg{
+.explore__pg {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
 }
 
-.top__sec{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-   margin-top: 5rem;
+.top__sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
 }
 
-.explore__heading{
-    
-/* position: absolute;
- *//* width: 417px;
+.explore__heading {
+    /* position: absolute;
+ */
+    /* width: 417px;
 height: 75px;
 left: 695px;
 top: 273px; */
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 2.5rem;
-line-height: 2rem;
-/* identical to box height */
-
-letter-spacing: 0.01em;
-
-/* Linear */
-
-background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-/* text-fill-color: transparent;
- */}
-
-.top__seccont{
     font-family: 'Poppins';
-font-style: normal;
-width: 15rem;
-text-align: center;
-margin-top: 1rem;
-
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    /* Linear */
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent;
+ */
 }
 
-.searchbar{
+.top__seccont {
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 15rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.searchbar {
     width: 19rem;
     height: 2rem;
     border-color: #E7A900;
     background-color: #fff;
     border-radius: 1rem;
     margin-top: 1rem;
-    
-
 }
 
-.explore__subheading{
+.explore__container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.explore__subheading {
     font-family: 'Poppins';
-/*     text-align: center;
- */    margin-left: 3rem;
- background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- background-clip: text;
-/*  text-fill-color: transparent;
- */ font-size: 1.5rem;
- margin-top:1rem;
-
+    /*     text-align: center;
+ */
+    margin-left: 3rem;
+    background: linear-gradient(93.33deg, #C33028 -1.81%, #FC823D 52.17%, #E7A900 115.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /*  text-fill-color: transparent;
+ */
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
-.ethnic__cont{
+
+.ethnic__cont {
     display: flex;
     flex-direction: row;
     margin: 3rem;
@@ -79,57 +84,60 @@ margin-top: 1rem;
     gap: 1rem;
 }
 
-.ethinc__subcont1{
+.ethinc__subcont1 {
     display: flex;
     flex-direction: column;
-/*     justify-content: center;
- */    width: 70%;
-  gap:1rem;
+    /*     justify-content: center;
+ */
+    width: 70%;
+    gap: 1rem;
 }
-.ethnic__subsubcont1{
+
+.ethnic__subsubcont1 {
     display: flex;
     flex-direction: row;
     height: 50%;
     gap: 1rem;
 }
-.ethnic__subcont2{
-  width: 30%;
-  background: rgba(254, 245, 245, 0.09);
-backdrop-filter: blur(39px);
-  border-radius: 10px;
-}
 
-.ethnic__subsubcont2{
+.ethnic__subcont2 {
+    width: 30%;
     background: rgba(254, 245, 245, 0.09);
     backdrop-filter: blur(39px);
-      border-radius: 10px;
-      height: 50%;
+    border-radius: 10px;
 }
 
-.divn1{
-    background: rgba(254, 245, 245, 0.09);
-backdrop-filter: blur(39px);
-/* Note: backdrop-filter has minimal browser support */
-width: 70%;
-border-radius: 10px;
-}
-
-.divn2{
-
+.ethnic__subsubcont2 {
     background: rgba(254, 245, 245, 0.09);
     backdrop-filter: blur(39px);
-      border-radius: 10px;
-      width: 30%;
+    border-radius: 10px;
+    height: 50%;
 }
 
+.divn1 {
+    background: rgba(254, 245, 245, 0.09);
+    backdrop-filter: blur(39px);
+    /* Note: backdrop-filter has minimal browser support */
+    width: 70%;
+    border-radius: 10px;
+}
 
-.cultural__subheading{
+.divn2 {
+    background: rgba(254, 245, 245, 0.09);
+    backdrop-filter: blur(39px);
+    border-radius: 10px;
+    width: 30%;
+}
+
+.cultural__subheading {
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 1rem;
-color: #ffffff;
-margin-left: 3rem;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-left: 3rem;
+
 }
 
 .exp__contentdiv{
@@ -145,5 +153,4 @@ margin-left: 3rem;
 
 .ethnic__place{
     font-size: 0.8rem;
-
 }
