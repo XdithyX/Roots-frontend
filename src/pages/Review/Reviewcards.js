@@ -5,24 +5,19 @@ import img from "../../../src/assets/png/guide.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { baseUrl } from "../../utils/urls";
-import axios from 'axios'
-import { useState,useEffect } from "react";
-import {AiFillStar} from 'react-icons/ai'
+import axios from "axios";
+import { useState, useEffect } from "react";
+import { AiFillStar } from "react-icons/ai";
 function Reviewcards() {
-    const [reviews,setReviews]=useState([])
-    useEffect(()=>{
-        async function fetchdata(){
-            const response=  await axios.get(`${baseUrl}/reviews/`)
-            console.log(response.data)
-                 setReviews(response.data);
-                 
-              
-     
-     
-        } fetchdata();
-       
-    },[])
-
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    async function fetchdata() {
+      const response = await axios.get(`${baseUrl}/reviews/`);
+      console.log(response.data);
+      setReviews(response.data);
+    }
+    fetchdata();
+  }, []);
 
   const responsive = {
     superLargeDesktop: {
@@ -46,37 +41,35 @@ function Reviewcards() {
 
   return (
     <MainLayout>
-       
+      <div className="review__page__div">
       <div className="reviewpg">
         <div className="reviewpg__heading">
           <h1> Tourist Experiences</h1>
         </div>
-       
-     
       </div>
       <Carousel responsive={responsive}>
-        {reviews.map((item)=>{
-            return(
+        {reviews.map((item) => {
+          return (
             <div class="review__div" key={item.id}>
-          <div className="rev__user__img">
-            <img src={img} className="rev__user__img" alt="" />
-          </div>
-          <div className="rev__details">
-            <p>Sanosh Jacob</p>
-            <p className="rev__place">{item.place_foreign}</p>
-            <p className="rev__content">{item.content}</p>
-            <div className="user__rev__star">
-              {[...Array(item.rating)].map((_, index) => (
-                <AiFillStar key={index}/>   
-              ))} 
+              <div className="rev__user__img">
+                <img src={img} className="rev__user__img" alt="" />
+              </div>
+              <div className="rev__details">
+                <p>Sanosh Jacob</p>
+                <p className="rev__place">{item.place_foreign}</p>
+                <p className="rev__content">{item.content}</p>
+                <div className="user__rev__star">
+                  {[...Array(item.rating)].map((_, index) => (
+                    <AiFillStar key={index} />
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-            )
+          );
         })}
-
-        </Carousel>
-        ;
+      </Carousel>
+      ;
+      </div>
     </MainLayout>
   );
 }
