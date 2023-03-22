@@ -16,7 +16,7 @@ const FestivalCard = ({ festImage, festName, festDesc }) => {
         festName={festName}
       />
 
-      <div className="act__card 1">
+      <div className="destination__cards_contain">
         <div className="act__card_image">
           {" "}
           <img src={festImage} alt="" />

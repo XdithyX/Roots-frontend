@@ -1,14 +1,27 @@
-import React from 'react'
+import React from "react";
 
-const ActivityCard = ({activityName,activityImage}) => {
+const ActivityCard = ({ activityName, activityImage }) => {
   return (
-    <div className="act__card 1">
-        <div className="act__card_image"> <img src={activityImage} alt="" /></div>
-        <div className="act__card_title title-white">
+    <div className="destination__cards_item ">
+      <div
+        className="act__card_image"
+        style={{
+          backgroundImage: `url(${activityImage})`,
+          // backgroundImage: `url(${externalImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          height: "15rem",
+          width: "20rem",
+        }}
+      >
+        <div className="act__card_titles">
           <p>{activityName}</p>
         </div>
+       
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default ActivityCard
+export default ActivityCard;
